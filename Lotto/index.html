@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또6/45 당첨정보</title>        <!--사이트의 title-->
+    <style>
+        input {                            /* 버튼의 스타일 설정 */
+            margin-left: 15px;             /* 버튼 왼쪽의 여백 */
+            color: rgb(21, 246, 205);    /* 버튼 내부의 글씨 색상 */
+            background: rgb(255, 253, 253);    /* 버튼 내부 색상 */
+            font-size: 1.5rem;              /* 버튼 내부의 글씨 사이즈 */
+        }
+        span {
+            font-size: 5rem;        /* span 속성의 글씨 사이즈 */
+            display: inline-block; /* 요소를 인라인 블록 요소로 설정하여 한 줄에 표시 */
+            width: 100px;           /* 원의 너비 고정*/
+            height: 100px;          /* 원의 높이 고정*/
+            border-radius: 50%;     /* 모서리를 반지름의 50%로 설정하여 원 모양으로 */
+        }
+        #result1 {                  /* 1번 로또 번호의 스타일 설정 */
+            color : white;        /* 글씨 색상 */
+            background-color: orangered;        /* 원의 내부 색상 */
+        }
+        #result2 {                  /* 2번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: gray;
+        }
+        #result3 {                  /* 3번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: green;
+        }
+        #result4 {                  /* 4번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: orangered;
+        }
+        #result5 {                  /* 5번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: goldenrod;
+        }
+        #result6 {                  /* 6번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: lightskyblue;
+        }
+        #result8 {                  /* 7번 로또 번호의 스타일 설정 */
+            color : white;
+            background-color: goldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>당첨번호</h1>
+    <h2>
+        2024년 04월 18일 추첨
+    </h2>
+    <div>
+        <input id="buttonId" type="button" value="번호 확인">   <!--번호를 확인할 버튼 생성-->
+    </div>
+    <br/>
+    
+    <div>
+        <!--로또번호에 해당하는 7개의 수 가져오기-->
+        <span id="result1"></span>
+        <span id="result2"></span>
+        <span id="result3"></span>
+        <span id="result4"></span>
+        <span id="result5"></span>
+        <span id="result6"></span>
+        <span id="result7"></span>  <!--로또번호가 아닌 보너스 번호를 구분하는 문자-->
+        <span id="result8"></span>
+    </div>
+    <script src="./app.js" defer></script>  <!-- js코드를 실행하기 위한 경로 설정-->
+</body>
+</html>
