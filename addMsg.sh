@@ -1,6 +1,7 @@
 #!/bin/bash
 
 today=$(date)
-echo $today >> aa.txt
+echo $today >> /root/workspace/hello-world/aa.txt 
+sh myGarden.sh
 
-echo $today
+exit 0
