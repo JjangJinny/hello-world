@@ -1,5 +1,7 @@
 #!/bin/bash
 
-git add /root/workspace/hello-world/
-git commit -m 'add aa.txt'
+cd /root/workspace/hello-world/
+
+git add .
+git commit -m 'Auto Commit aa.txt'
 git push
